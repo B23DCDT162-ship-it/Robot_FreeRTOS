@@ -199,11 +199,11 @@ Robot nhận một ký tự từ Bluetooth để thực hiện lệnh:
 
 | Ký tự | Chức năng |
 |---|---|
-| `F` | Tiến về phía trước |
-| `B` | Lùi về phía sau |
-| `L` | Quay trái |
-| `R` | Quay phải |
-| `S` | Dừng động cơ |
+| `W` | Tiến về phía trước |
+| `S` | Lùi về phía sau |
+| `A` | Quay trái |
+| `D` | Quay phải |
+| `X` | Dừng động cơ |
 
 Ngoài việc nhận lệnh điều khiển từ Bluetooth, chương trình còn có chức năng tự động dừng robot khi cảm biến siêu âm phát hiện vật cản ở khoảng cách nhỏ hơn giá trị `APP_OBSTACLE_STOP_CM`.
 
