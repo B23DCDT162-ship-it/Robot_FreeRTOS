@@ -5,7 +5,7 @@
 **Driver ngoại vi:** STM32F10x Standard Peripheral Library (SPL)  
 **RTOS:** FreeRTOS Kernel, API trực tiếp (`xTaskCreate`, Queue, Semaphore, task notification...)
 
-> Đây là bộ mã nguồn ứng dụng và cấu hình nền tảng do nhóm dự án quản lý. Các thư viện bên thứ ba (SPL/CMSIS/FreeRTOS Kernel) được lấy từ nguồn upstream và phải được đặt vào đúng thư mục theo hướng dẫn bên dưới. Không sao chép HAL vào dự án.
+
 
 ## 1. Phần cứng và pin mặc định
 
@@ -15,11 +15,11 @@
 | HC-SR04 ECHO | PB6 | Đọc mức bằng polling, TIM4 làm bộ đếm 1 MHz |
 | Encoder trái A/B | PA0 / PA1 | TIM2 encoder mode |
 | Encoder phải A/B | PA6 / PA7 | TIM3 encoder mode |
-| TB6612 PWMA / PWMB | PA8 / PA9 | TIM1 CH1 / CH2 |
-| TB6612 AIN1 / AIN2 | PB12 / PB13 | GPIO direction |
-| TB6612 BIN1 / BIN2 | PB14 / PB15 | GPIO direction |
-| TB6612 STBY | PB5 | HIGH = enable |
-| Bluetooth HC-05 TX/RX | PA3 / PA2 | USART2, 9600 baud |
+| L298N PWMA / PWMB | PA8 / PA9 | TIM1 CH1 / CH2 |
+| L298N AIN1 / AIN2 | PB12 / PB13 | GPIO direction |
+| L298N BIN1 / BIN2 | PB14 / PB15 | GPIO direction |
+| L298N STBY | PB5 | HIGH = enable |
+| Bluetooth HC-08 TX/RX | PA3 / PA2 | USART2, 9600 baud |
 | SWD | PA13 / PA14 | Không dùng làm GPIO |
 
 **An toàn điện:** HC-SR04 ECHO thường là 5 V; dùng cầu chia áp/level shifter trước PB6. Nối chung GND giữa STM32, driver và nguồn động cơ. Cấp nguồn động cơ riêng đúng định mức. Không cấp motor từ chân 3V3. Kiểm tra mức logic, pinout module và dây thực tế trước khi cấp nguồn.
