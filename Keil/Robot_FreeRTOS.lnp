@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+".\main.o"
+".\startup_stm32f10x_md.o"
+".\system_stm32f10x.o"
+".\misc.o"
+".\stm32f10x_gpio.o"
+".\stm32f10x_rcc.o"
+".\stm32f10x_tim.o"
+".\stm32f10x_usart.o"
+".\list.o"
+".\queue.o"
+".\tasks.o"
+".\timers.o"
+".\port.o"
+".\heap_4.o"
+".\bsp_encoder.o"
+".\bsp_timer.o"
+".\bsp_uart.o"
+".\board.o"
+".\encoder.o"
+".\motor.o"
+".\uart.o"
+".\ultrasonic.o"
+--strict --scatter ".\Robot_FreeRTOS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Robot_FreeRTOS.map" -o .\Robot_FreeRTOS.axf

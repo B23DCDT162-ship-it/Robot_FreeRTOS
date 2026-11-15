@@ -1,0 +1,11 @@
+#ifndef APP_CONFIG_H
+#define APP_CONFIG_H
+
+#define APP_OBSTACLE_STOP_CM       20U
+#define APP_SENSOR_PERIOD_MS       60U
+#define APP_CONTROL_PERIOD_MS      20U
+#define APP_MONITOR_PERIOD_MS      500U
+#define APP_DEFAULT_DUTY_PERCENT   35U
+#define APP_UART_BAUDRATE          9600U
+
+#endif
